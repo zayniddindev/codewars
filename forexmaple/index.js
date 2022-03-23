@@ -1,17 +1,12 @@
-const count = (() => {
-  let counter = 0;
-  return function () {
-    return (counter += 1);
-  };
-})();
+let id = Symbol("id");
+let user = {
+  name: "John",
+  [id]: 2,
+};
 
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
-console.log(count());
+
+// user[id] = 1;
+// user[id] = 4;
+// user.id = 66;
+
+console.log(user);
