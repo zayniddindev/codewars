@@ -1,25 +1,37 @@
 function primeFactors(n) {
-  let result = "";
-  let arr = [];
-  let an = n;
-  for (let i = 2; i < n; ) {
-    if (an % i == 0) {
-      arr.push([i, 0]);
-      an = an / i;
-    } else i++;
+  let factors = [];
+  while (n % 2 == 0) {
+    factors.push(2);
+    n = n / 2;
   }
-  arr = arr.reduce(addDeg);
-  return arr;
-}
-
-const addDeg = (a, b, i) => {
-    if(a[0] == b[0]) {
-        a[1]++;
-        return a
-    }else{
-        return i++
+  for (var i = 3; i * i <= n; i += 2) {
+    while (n % i == 0) {
+      factors.push(i);
+      n = n / i;
     }
+  }
+  if (n > 2) {
+    factors.push(n);
+  }
+  return factors;
 }
 
-console.log(primeFactors(7775460));
-// console.log(addDeg([2, 0], [2, 0]));
+const addDeg = (arr) => {
+  let result = [];
+  let added = {};
+  for (let i = 0; i < arr.length; i++) {
+    let e = arr[i];
+    if (added.hasOwnProperty(e)) {
+      added[e]++;
+    } else {
+      added[e] = 1;
+    }
+  }
+  for (const key of Object.keys(added)) {
+    result.push(key + "^" + added[key]);
+  }
+  return result.join(' * ');
+};
+
+console.log(primeFactors(87444)); // [ 2, 2, 3, 3, 7, 347 ]
+console.log(addDeg(primeFactors(87444))); // 2^2 * 3^2 * 7^1 * 347^1
