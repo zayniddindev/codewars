@@ -7,4 +7,4 @@ function modularExponentation(base, exp, mod) {
   return value;
 }
 
-console.log(modularExponentation(6 * 10 ** 77, 27, 497)); // 149
+console.log(modularExponentation(6 * 10 ** 77, 27, 497)); // 149 
