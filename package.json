@@ -1,0 +1,25 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "Codewars kata solutions",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zayniddin602/codewars.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "codewars"
+  ],
+  "author": "Zayniddin Atabayev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zayniddin602/codewars/issues"
+  },
+  "homepage": "https://github.com/Zayniddin602/codewars#readme"
+}
