@@ -1,1 +1,0 @@
-document.getElementById('text').innerHTML+=5
