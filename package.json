@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zayniddin602/codewars.git"
+    "url": "git+https://github.com/zayniddindev/codewars.git"
   },
   "keywords": [
     "javascript",
@@ -19,7 +19,7 @@
   "author": "Zayniddin Atabayev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zayniddin602/codewars/issues"
+    "url": "https://github.com/zayniddindev/codewars/issues"
   },
-  "homepage": "https://github.com/Zayniddin602/codewars#readme"
+  "homepage": "https://github.com/zayniddindev/codewars#readme"
 }
